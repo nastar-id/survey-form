@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(0,0,0), rgb(85,85,202));
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+#title {
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+#description {
+  margin-bottom: 2rem;
+}
+
+.form-box {
+  max-width: 600px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 auto 2rem auto;
+  padding: 25px 15px;
+  border-radius: 10px;
+  color: #000;
+}
+
+#name, #email, #number, select, textarea {
+  height: 35px;
+  width: 100%;
+  background: rgba(255,255,255,0.6);
+  padding-left: 5px;
+  border: 1px solid #7878f4;
+  border-radius: 10px;
+}
+
+#name-label, #email-label {
+  display: none;
+}
+
+.namemail {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.namemail #name, .namemail #email {
+  width: 275px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+input:focus, input:active,
+select:focus, select:active,
+textarea:focus, textarea:active {
+  outline: 2.5px solid rgba(13,13,237,0.3);
+}
+
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+#submit {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 70%;
+  height: 35px;
+  background: #5e5eb9;
+  border: 1px solid rgb(255,255,255);
+  border-radius: 10px;
+  color: #fff;
+}
+
+#submit:hover {
+  background: rgb(8,8,159);
+}
+
+.label {
+  display: block;
+  margin: 25px 0 10px 0;
+  text-align: left;
+}
+
+h1, p {
+  text-align: center;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 435px) {
+  .namemail {
+    display: block;
+  }
+  
+  .namemail #name, .namemail #email {
+    width: 100%;
+    margin: 0;
+  }
+  
+  #name-label, #email-label {
+    display: block;
+  }
+}

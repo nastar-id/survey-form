@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Survey form</title>
+  </head>
+  <body>
+    <h1 id="title">Ramadhan survey form</h1>
+    <p id="description">Survey to know what most people get excited about Ramadhan</p>
+    <div class="form-box">
+      <p><strong>Silahkan isi form dibawah</strong></p>
+      <form id="survey-form">
+        <div class="namemail">
+          <label for="name" id="name-label" class="label">Nama:</label>
+          <input type="text" id="name" placeholder="Input your name" autocomplete="false" required>
+          <label for="email" id="email-label" class="label">Email:</label>
+          <input type="email" id="email" placeholder="Input your email" autocomplete="false" required>
+        </div>
+        <label for="number" id="number-label" class="label">Umur:</label>
+        <input type="number" id="number" placeholder="Input your age" min="7" max="70" autocomplete="false">
+        <p class="label">Apa kamu siap untuk Ramadhan?</p>
+        <select id="dropdown">
+          <option disabled selected value>- Siap? -</option>
+          <option value="yes">Tentu saja!</option>
+          <option value="no">Tidak</option>
+          <option value="idk">Tak tau</option>
+        </select>
+        <p class="label">Apa yg paling anda tunggu di bulan Ramadhan?</p>
+        <label for="pahala" class="label">
+          <input type="radio" id="pahala" name="radio" value="pahala">
+              Farming Pahala
+        </label>
+        <label for="vibes" class="label">
+          <input type="radio" id="vibes" name="radio" value="vibes">
+              Vibes Ramadhan
+        </label>
+        <label for="both" class="label">
+          <input type="radio" id="both" name="radio" value="both">
+              Dua-duanya akwawkak
+        </label>
+        <p class="label">Moment apa yg kalian rindukan?</p>
+        <label for="ngabuburit" class="label">
+          <input type="checkbox" id="ngabuburit" value="ngabuburit"> Ngabuburit
+        </label>
+        <label for="sahur" class="label">
+          <input type="checkbox" id="sahur" value="sahur"> Sahur/bangunin sahur keliling
+        </label>
+        <label for="tarawih" class="label">
+          <input type="checkbox" id="tarawih" value="tarawih"> Solat tarawih
+        </label>
+        <label for="buka" class="label">
+          <input type="checkbox" id="buka" value="buka"> Buka puasa bersama
+        </label>
+        <label for="takjil" class="label">
+          <input type="checkbox" id="takjil" value="takjil"> Berburu takjil
+        </label>
+        <p class="label">Komentar</p>
+        <textarea></textarea>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
